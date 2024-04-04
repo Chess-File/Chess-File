@@ -19,23 +19,23 @@ export default function Footer() {
                     </div>
                 </nav>
                 <div className="mt-8 flex justify-center space-x-6">
-                    <a href="https://www.facebook.com/temp" className="text-gray-400 hover:text-gray-500">
+                    {/* <a href="https://www.facebook.com/temp" className="text-gray-400 hover:text-gray-500">
                         <span className="sr-only">Facebook</span>
                         <Image src="/socials/facebook.svg" alt="Facebook" width={20} height={20} />
                     </a>
                     <a href="https://www.twitter.com/temp" className="text-gray-400 hover:text-gray-500">
                         <span className="sr-only">X</span>
                         <Image src="/socials/x.svg" alt="X" width={20} height={20} />
-                    </a>
-                    <a href="https://www.youtube.com/temp" className="text-gray-400 hover:text-gray-500">
+                    </a> */}
+                    <a href="https://www.youtube.com/@ChessFile_AT" className="text-gray-400 hover:text-gray-500">
                         <span className="sr-only">YouTube</span>
                         <Image src="/socials/youtube.svg" alt="YouTube" width={20} height={20} />
                     </a>
-                    <a href="https://www.instagram.com/temp" className="text-gray-400 hover:text-gray-500">
+                    <a href="https://www.instagram.com/chess_file" className="text-gray-400 hover:text-gray-500">
                         <span className="sr-only">Instagram</span>
                         <Image src="/socials/instagram.svg" alt="Instagram" width={20} height={20} />
                     </a>
-                    <a href="https://www.github.com/temp" className="text-gray-400 hover:text-gray-500">
+                    <a href="https://www.github.com/Chess-File" className="text-gray-400 hover:text-gray-500">
                         <span className="sr-only">GitHub</span>
                         <Image src="/socials/github.svg" alt="GitHub" width={20} height={20} />
                     </a>
