@@ -4,6 +4,10 @@ import Footer from "~/components/Footer";
 import Navbar from "~/components/Navbar";
 import { env } from "~/env.js";
 import logo from "~/assets/logoNoText.png";
+import flo from "~/assets/flo.jpg";
+import daniel from "~/assets/daniel.jpg";
+import nicolas from "~/assets/nico.jpg";
+import paul from "~/assets/paul.jpg";
 
 export default function About() {
     return (
@@ -31,25 +35,25 @@ export default function About() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 w-1/2">
                         <div className="text-center">
-                            <Image src="/male-icon.svg" alt="Founder 1" width={20} height={20} className="mx-auto rounded-full h-32 w-32 mb-4" />
+                            <Image src={daniel} alt="Daniel Kristoferitsch" className="mx-auto rounded-full object-cover h-36 w-36 mb-4" />
                             <h2 className="text-lg font-semibold">Daniel Kristoferitsch</h2>
                             <p className="mt-2 text-gray-500">Daniel, our chess strategist, brings years of competitive experience to the table to make sure Chess-File lives up to the highest standards.</p>
                         </div>
 
                         <div className="text-center">
-                            <Image src="/male-icon.svg" alt="Founder 1" width={20} height={20} className="mx-auto rounded-full h-32 w-32 mb-4" />
+                            <Image src={flo} alt="Florentin Wassilikos" className="mx-auto rounded-full object-cover h-36 w-36 mb-4" />
                             <h2 className="text-lg font-semibold">Florentin Wassilikos</h2>
                             <p className="mt-2 text-gray-500">Flo, the versatile brain behind our operations, innovates and helps connect the dots across the disciplines.</p>
                         </div>
 
                         <div className="text-center">
-                            <Image src="/male-icon.svg" alt="Founder 1" width={20} height={20} className="mx-auto rounded-full h-32 w-32 mb-4" />
-                            <h2 className="text-lg font-semibold">Nicolas Weißenbach</h2>
+                            <Image src={nicolas} alt="Nicolas Weissenbach" className="mx-auto rounded-full object-cover h-36 w-36 mb-4" />
+                            <h2 className="text-lg font-semibold">Nicolas Weissenbach</h2>
                             <p className="mt-2 text-gray-500">Nicolas safeguards Chess-File&apos;s digital fortress with expertise in cybersecurity and copyright laws.</p>
                         </div>
 
                         <div className="text-center">
-                            <Image src="/male-icon.svg" alt="Founder 1" width={20} height={20} className="mx-auto rounded-full h-32 w-32 mb-4" />
+                            <Image src={paul} alt="Paul Graf" className="mx-auto rounded-full object-cover h-36 w-36 mb-4" />
                             <h2 className="text-lg font-semibold">Paul Graf</h2>
                             <p className="mt-2 text-gray-500">Paul, our lead developer, ensures that Chess-File&apos;s platform is robust, scalable, and ahead of the curve.</p>
                         </div>
