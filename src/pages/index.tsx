@@ -1,11 +1,20 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useState } from "react";
+import ConfettiExplosion from "react-confetti-explosion";
 import heroImage from "~/assets/heroImg.webp";
 import Footer from "~/components/Footer";
 import Navbar from "~/components/Navbar";
 import { env } from "~/env.js";
 
 export default function Home() {
+    const [renderConfetti, setRenderConfetti] = useState(false);
+    const triggerConfetti = () => {
+        setRenderConfetti(true);
+    };
+    const stopConfetti = () => {
+        setRenderConfetti(false);
+    };
     return (
         <>
             <Head>
@@ -19,7 +28,16 @@ export default function Home() {
                     <div className="grid max-w-screen-xl px-4 py-8 mx-auto grid-cols-2 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                         <div className="mr-auto place-self-center col-span-2 lg:col-span-7 mx-auto lg:order-1 order-3">
                             <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl xl:text-6xl ">
-                                Tired of spending <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-500">hours searching</span> for the right <span className="chess-file-title underline">Chess-File</span>?
+                                Tired of spending&nbsp;
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-500">
+                                    hours searching
+                                </span> for the right&nbsp;
+                                <div className="relative w-fit">
+                                    <span className="chess-file-title underline" onMouseEnter={triggerConfetti} onMouseLeave={stopConfetti}>
+                                        Chess-File
+                                    </span>?
+                                    {renderConfetti && <ConfettiExplosion className="absolute w-1 h-1 left-1/2 top-1/2" />}
+                                </div>
                             </h1>
                             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl ">
                                 Dive into a world of chess strategies with Chess-File. Share, rate, and refine your chess analyses with enthusiasts around the globe.
